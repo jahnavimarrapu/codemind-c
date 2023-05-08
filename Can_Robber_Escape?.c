@@ -1,26 +1,25 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,odd=0;
+    int x[20],i,n,odd=0;
     scanf("%d",&n);
-    int a[n];
     for(i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&x[i]);
     }
-    for(i=0;i<n;i++)
     {
-        if(a[i]%2!=0)
+        for(i=0;i<n;i++)
         {
+            if(x[i]%2!=0)
             odd++;
         }
-    }
         if(odd<=2)
         {
             printf("YES");
         }
-    else
-    {
-    printf("NO");
-}
+        else
+        {
+            printf("NO");
+        }
+    }
 }
